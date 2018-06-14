@@ -26,14 +26,11 @@ security:
 spring:
     datasource:
         data: classpath:/sql/data.sql
-        driver-class-name: com.mysql.jdbc.Driver
         password: 'netinho123'
-        platform: postgresql
         schema: classpath:/sql/schema.sql
         url: jdbc:postgresql://localhost:5432/oauth
         username: postgresql
     jpa:
-        database-platform: org.hibernate.dialect.MySQLDialect
         generate-ddl: false
         hibernate:
             ddl-auto: none
