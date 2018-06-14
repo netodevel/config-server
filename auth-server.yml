@@ -29,7 +29,7 @@ spring:
         password: netinho123
         schema: classpath:/sql/schema.sql
         url: jdbc:postgresql://localhost:5432/oauth
-        username: postgresql
+        username: postgres
     jpa:
         generate-ddl: false
         hibernate:
