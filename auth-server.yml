@@ -27,11 +27,11 @@ spring:
     datasource:
         data: classpath:/sql/data.sql
         driver-class-name: com.mysql.jdbc.Driver
-        password: '1234'
-        platform: mysql
+        password: 'netinho123'
+        platform: postgresql
         schema: classpath:/sql/schema.sql
-        url: jdbc:mysql://localhost/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false
-        username: root
+        url: jdbc:postgresql://localhost:5432/oauth
+        username: postgresql
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
         generate-ddl: false
