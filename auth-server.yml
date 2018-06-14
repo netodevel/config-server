@@ -26,7 +26,7 @@ security:
 spring:
     datasource:
         data: classpath:/sql/data.sql
-        password: 'netinho123'
+        password: netinho123
         schema: classpath:/sql/schema.sql
         url: jdbc:postgresql://localhost:5432/oauth
         username: postgresql
