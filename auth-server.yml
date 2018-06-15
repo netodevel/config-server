@@ -31,5 +31,5 @@ spring:
     jpa:
         generate-ddl: false
         hibernate:
-            ddl-auto: create-drop
+            ddl-auto: none
         show-sql: true
