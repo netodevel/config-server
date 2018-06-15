@@ -23,7 +23,10 @@ security:
             resource-ids: resources
             scope: read,write
             
-security.oauth2.resource.filter-order=3
+security:
+    oauth2:
+        resource:
+            filter-order=3
 
 spring:
     datasource:
