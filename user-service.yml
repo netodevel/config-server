@@ -25,7 +25,7 @@ security:
 spring:
     datasource:
         password: netinho123
-        url: jdbc:postgresql://localhost:5432/user_db
+        url: jdbc:postgresql://localhost:5432/oauth
         username: postgres
     jpa:
         generate-ddl: false
