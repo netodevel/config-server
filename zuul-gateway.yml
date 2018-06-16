@@ -1,5 +1,5 @@
 server:
-  port: 9094
+  port: 8080
 
 zuul.routes.token.path: /api/**
 zuul.routes.token.url: http://localhost:9094/
