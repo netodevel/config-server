@@ -8,3 +8,15 @@ zuul.routes.users.path: /api/users/**
 zuul.routes.users.url: http://localhost:8083/
 
 ribbon.eureka.enabled: false
+
+security:
+  oauth2:    
+    client:
+      accessTokenUri: http://localhost:9094/oauth/token
+      userAuthorizationUri: http://localhost:9094/oauth/authorize
+      clientId: mobile
+      clientSecret: 123
+    resource:
+      userInfoUri: http://localhost:9094/user
+      preferTokenInfo: false  
+  sessions: ALWAYS
