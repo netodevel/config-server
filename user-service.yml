@@ -1,0 +1,38 @@
+server:
+  port: 8083
+
+eureka:
+  instance:
+    hostname: localhost
+    port: 9091
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
+
+authserver:
+  
+  hostname: http://localhost:9092
+
+
+security:
+  
+  oauth2:
+    
+    resource:
+      
+      userInfoUri: ${authserver.hostname}/user
+
+spring:
+    datasource:
+        password: netinho123
+        url: jdbc:postgresql://localhost:5432/user_db
+        username: postgres
+    jpa:
+        generate-ddl: false
+        hibernate:
+            ddl-auto: create-drop
+        show-sql: true
