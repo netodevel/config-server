@@ -14,17 +14,13 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
 
 authserver:
-  
-  hostname: http://localhost:9092
+  hostname: http://localhost:9094
 
 
 security:
-  
-  oauth2:
-    
-    resource:
-      
-      userInfoUri: ${authserver.hostname}/user
+    oauth2:
+        resource:
+            userInfoUri: ${authserver.hostname}/user
 
 spring:
     datasource:
